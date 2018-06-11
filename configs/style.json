@@ -1,0 +1,39 @@
+{
+    "DATASET": "style",
+    "SRC_DICT": "data/bibles/styles/amp-bbe/dict.in",
+    "DST_DICT": "data/bibles/styles/amp-bbe/dict.out",
+    "TRAIN_INPUT": "data/bibles/styles/amp-bbe/train.in",
+    "TRAIN_OUTPUT": "data/bibles/styles/amp-bbe/train.out",
+    "DEV_INPUT": "data/bibles/styles/amp-bbe/test.in",
+    "DEV_OUTPUT": "data/bibles/styles/amp-bbe/test.out",
+    "EVAL_BLEU_FUNC": "precisionInstance",
+    "DECODER_HIDDEN_SIZE": 50,
+    "WORD_EMBEDDING_SIZE": 100,
+    "ENCODER_HIDDEN_SIZE": 50,
+    "ENCODER_LAYERS": 1,
+    "DECODER_LAYERS": 1,
+    "LR": 1.0,
+    "LR_DECAY": 0.7,
+    "OPTIMIZER": "GD",
+    "MAX_STEPS_PER_ITER": 100,
+    "DECAY_STEPS": 1000,
+    "ITERS": 15,
+    "SEED": 23333,
+    "BATCH_SIZE": 32,
+    "INPUT_DROPOUT": 1.0,
+    "OUTPUT_DROPOUT": 0.7,
+    "USE_BS": false,
+    "BEAM_WIDTH": 10,
+    "BUCKETS": [
+        [
+            50,
+            3
+        ]
+    ],
+    "CLIP": true,
+    "CLIP_NORM": 1.0,
+    "BIDIRECTIONAL_ENCODER": true,
+    "ATTENTION_DECODER": true,
+    "ATTENTION_MECHANISE": "LUONG",
+    "CELL": "lstm"
+}

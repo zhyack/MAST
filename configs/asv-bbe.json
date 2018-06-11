@@ -1,0 +1,39 @@
+{
+    "DATASET": "asv-bbe",
+    "SRC_DICT": "data/bibles/asv-ylt-p02u20/all.in.dict",
+    "DST_DICT": "data/bibles/asv-ylt-p02u20/all.out.dict",
+    "TRAIN_INPUT": "data/bibles/asv-ylt-p02u20/train.in",
+    "TRAIN_OUTPUT": "data/bibles/asv-ylt-p02u20/train.out",
+    "DEV_INPUT": "data/bibles/asv-ylt-p02u20/test.in",
+    "DEV_OUTPUT": "data/bibles/asv-ylt-p02u20/test.out",
+    "EVAL_BLEU_FUNC": "bleuPerlInstanceSingle",
+    "DECODER_HIDDEN_SIZE": 500,
+    "WORD_EMBEDDING_SIZE": 500,
+    "ENCODER_HIDDEN_SIZE": 500,
+    "ENCODER_LAYERS": 2,
+    "DECODER_LAYERS": 2,
+    "LR": 1.0,
+    "LR_DECAY": 0.7,
+    "OPTIMIZER": "GD",
+    "MAX_STEPS_PER_ITER": 300,
+    "DECAY_STEPS": 10000,
+    "ITERS": 15,
+    "SEED": 2333,
+    "BATCH_SIZE": 32,
+    "INPUT_DROPOUT": 1.0,
+    "OUTPUT_DROPOUT": 0.7,
+    "USE_BS": false,
+    "BEAM_WIDTH": 10,
+    "BUCKETS": [
+        [
+            50,
+            50
+        ]
+    ],
+    "CLIP": true,
+    "CLIP_NORM": 1.0,
+    "BIDIRECTIONAL_ENCODER": true,
+    "ATTENTION_DECODER": true,
+    "ATTENTION_MECHANISE": "LUONG",
+    "CELL": "lstm"
+}

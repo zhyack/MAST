@@ -1,0 +1,51 @@
+{
+    "DATASET": "asv-darby-cc",
+    "MODEL_PREFIX": "asv-darby-02-",
+    "SRC_DICT": "data/bibles/asv-darby-p02u20/all.in.dict",
+    "DST_DICT": "data/bibles/asv-darby-p02u20/all.out.dict",
+    "TRAIN_X_P": "data/bibles/asv-darby-p02u20/train.in",
+    "TRAIN_Y_P": "data/bibles/asv-darby-p02u20/train.out",
+    "TRAIN_X_U": "data/bibles/asv-darby-p02u20/supplement.in",
+    "TRAIN_Y_DA": "data/bibles/asv-darby-p02u20/dn.all.out",
+    "TRAIN_Y_A": "data/bibles/asv-darby-p02u20/all.out",
+    "LM_MODEL_Y": "data/bibles/asv-darby-p02u20/out.lm",
+    "DEV_INPUT": "data/bibles/asv-darby-p02u20/dev.in",
+    "DEV_OUTPUT": "data/bibles/asv-darby-p02u20/dev.out",
+    "EVAL_BLEU_FUNC": "bleuPerlInstanceSingle",
+    "DECODER_HIDDEN_SIZE": 500,
+    "WORD_EMBEDDING_SIZE": 500,
+    "ENCODER_HIDDEN_SIZE": 500,
+    "ENCODER_LAYERS": 2,
+    "DECODER_LAYERS": 2,
+    "LR": 1.0,
+    "LR_DECAY": 0.7,
+    "OPTIMIZER": "GD",
+    "MAX_STEPS_PER_ITER": 500,
+    "DECAY_STEPS": 10000,
+    "ITERS": 30,
+    "SEED": 23333,
+    "BATCH_SIZE": 32,
+    "INPUT_DROPOUT": 1.0,
+    "OUTPUT_DROPOUT": 0.7,
+    "USE_BS": false,
+    "BEAM_WIDTH": 10,
+    "BUCKETS": [
+        [
+            50,
+            50
+        ]
+    ],
+    "MODES": [
+        0,
+        1,
+        2
+    ],
+    "RL_ENABLE": true,
+    "RL_RATIO": 0.2,
+    "CLIP": true,
+    "CLIP_NORM": 1.0,
+    "BIDIRECTIONAL_ENCODER": true,
+    "ATTENTION_DECODER": true,
+    "ATTENTION_MECHANISE": "LUONG",
+    "CELL": "lstm"
+}
